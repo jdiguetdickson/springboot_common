@@ -1,0 +1,6 @@
+#rep is a string with the xml 
+XMLparse parse = new XMLparse();
+Document doc = parse.cleanGCE140XML(rep);
+XPathFactory xPathfactory = XPathFactory.newInstance()
+XPath xpath = xPathfactory.newXPath();XPathExpression contactPath = xpath.compile("/layout_data/VueUtilisateurCourantSociete[@name='UtilisateurCourantSociete']/JUt_UtiView/JUt_UtiViewRow/…");NodeList contactNodes = (NodeList) contactPath.evaluate(doc, XPathConstants.NODESET);
+contact = (Element) contactNodes.item(0);
