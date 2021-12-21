@@ -3,7 +3,7 @@ pipeline {
     agent any
     tools {
         maven 'MAVEN_HOME'
-        jdk 'jdk11'
+        jdk 'jdk14'
     }
     options {
         timestamps()
